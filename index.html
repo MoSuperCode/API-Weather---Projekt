@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+    <fieldset>
+        <legend>
+            <h1>Mo's Weather Station</h1>
+        </legend>
+        <div>
+            <input style="width: 50%;" type="text" name="" id="cityInput" placeholder="City">
+            <button onclick="fetchWeather()">Wetter Anzeigen</button>
+        </div>
+
+        <table>
+            <tr>
+                <th class="borderLeft">Local Time</th>
+                <td id="localTimeOutput">Time</td>
+            </tr>
+            <tr>
+                <th>Wind</th>
+                <td id="windOutput">Wind</td>
+            </tr>
+            <tr>
+                <th>Weather</th>
+                <td id="skyOutput">Clear Sky</td>
+            </tr>
+            <tr>
+                <th>Cloudiness</th>
+                <td id="cloudinessOutput">Clouds</td>
+            </tr>
+            <tr>
+                <th>Pressure</th>
+                <td id="pressureOutput">Pressure</td>
+            </tr>
+            <tr>
+                <th>Humidity</th>
+                <td id="humidityOutput">Humidity</td>
+            </tr>
+            <tr>
+                <th>Sunrise</th>
+                <td id="sunriseOutput">Sunrise</td>
+            </tr>
+            <tr>
+                <th>Sunset</th>
+                <td id="sunsetOutput">Sunset</td>
+            </tr>
+            <tr>
+                <th class="borderBotLeft">Geo coords</th>
+                <td id="coordsOutput">Coordinaten</td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

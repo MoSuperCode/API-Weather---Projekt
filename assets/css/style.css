@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+input {
+    margin-top: 20px;
+    padding: 4px 1px;
+    font-size: 20px;
+}
+
+button {
+    width: 51%;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+div {
+    text-align: center;
+}
+
+legend {
+    font-size: 80%;
+}
+
+fieldset {
+    width: 70%;
+    margin: 10% auto;
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto;
+}
+
+table {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+tr:nth-of-type(odd) {
+    background-color: rgb(238, 238, 238);
+}
+
+td {
+    padding: 10px;
+    border: solid 1.2px;
+}
+
+th {
+    padding: 10px;
+    border: solid 1.2px;
+}
+
+td#localTimeOutput {
+    border-radius: 0 10px 0 0;
+}
+
+th.borderLeft {
+    border-radius: 10px 0 0 0;
+}
+
+th.borderBotLeft {
+    border-radius: 0 0 0 10px;
+}
+
+td#coordsOutput {
+    border-radius: 0 0 10px 0;
+}
