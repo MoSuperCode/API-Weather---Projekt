@@ -5,8 +5,7 @@
 // update: PUT
 // delete: DELETE
 
-
-
+let articleDiv = document.getElementById("div");
 let localTimeOutput = document.getElementById("localTimeOutput");
 let windOutput = document.getElementById("windOutput");
 let cloudinessOutput = document.getElementById("cloudinessOutput");
@@ -20,22 +19,13 @@ let windDirection;
 let temperatureOutput = document.createElement("p");
 let imgIcon = document.createElement("img");
 
-
-
-
-
-
-
-
 function fetchWeather() {
     const city = document.getElementById("cityInput").value;
     console.log(city);
 
-    document.querySelector("div").appendChild(imgIcon);
+    articleDiv.appendChild(imgIcon);
 
-    document.querySelector("div").appendChild(temperatureOutput);
-
-
+    articleDiv.appendChild(temperatureOutput);
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=661761509dd76637b50a6a59dbb6daa5&units=metric 
     `)
@@ -80,11 +70,9 @@ function fetchWeather() {
                 windDirection = +i + "° -=- NNW    ";
             }
             imgIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-            temperatureOutput.innerText = data.main.temp + "°";
+            temperatureOutput.innerText = data.main.temp + "°C";
 
             console.log(data);
-
-
 
             const localTime = new Date().getTime();
             localTimeOutput.innerText = (new Date(localTime - 3600 * 1000 + data.timezone * 1000)).toLocaleTimeString("de-DE");
@@ -106,10 +94,4 @@ function fetchWeather() {
         });
 
 
-
-
 }
-
-
-
-
